@@ -1,0 +1,243 @@
+.GuidesDetailsDiv {
+    border-radius: 5px;
+    width: 35%;
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    padding: 20px 0;
+    position: relative;
+    transition: all 0.2s linear;
+    min-width: 270px;
+}
+
+.GuidesDetailsDiv:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.GuidesInfo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.GuidesImage {
+    width: 90px;
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+}
+
+.GuidesImage img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.GuidesNameAndLocation {
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.GuidesNameAndLocation p:nth-child(1) {
+    margin-bottom: 0;
+    font-weight: bold;
+    white-space: pre-wrap;
+    font-size: 25px;
+}
+
+.GuidesNameAndLocation p:nth-child(2) {
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+
+.GuidesNameAndLocation p:nth-child(3) {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 13px;
+}
+
+.GuidesExperience {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.GuidesExperienceFirstDiv {
+    font-size: 5vw;
+}
+
+.GuidesExperienceSecoundDiv {
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.GuidesExperienceSecoundDiv div:nth-child(1) {
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+
+.GuidesExperienceSecoundDiv div:nth-child(2) {
+    font-size: 1.2vw;
+    color: rgb(109, 109, 109);
+}
+
+.GuidesLanguage {
+    white-space: pre-wrap;
+    padding: 0 10px 0 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 0 0 2px rgb(114, 114, 114);
+}
+
+@media (max-width:920px) {
+    .GuidesDetailsDiv {
+        width: 45%;
+        transform: none;
+        transition: none;
+    }
+
+    .GuidesDetailsDiv:hover {
+        transform: none;
+    }
+
+    .GuidesImage {
+        width: 10vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(1) {
+        font-size: 2vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(2) {
+        font-size: 1.7vw;
+    }
+
+    .GuidesExperience {
+        bottom: -5px;
+    }
+
+    .GuidesExperienceFirstDiv {
+        font-size: 10vw;
+    }
+
+    .GuidesExperienceSecoundDiv div:nth-child(1) {
+        font-size: 3vw;
+    }
+
+    .GuidesExperienceSecoundDiv div:nth-child(2) {
+        font-size: 2vw;
+    }
+
+    .GuidesLanguage {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:500px) {
+    .GuidesDetailsDiv {
+        width: 70%;
+    }
+
+    .GuidesImage {
+        width: 80px;
+    }
+
+    .GuidesNameAndLocation p:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(2) {
+        font-size: 4vw;
+    }
+
+    .GuidesExperience {
+        bottom: -5px;
+    }
+
+    .GuidesExperienceFirstDiv {
+        font-size: 14vw;
+    }
+
+    .GuidesExperienceSecoundDiv div:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .GuidesExperienceSecoundDiv div:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .GuidesLanguage {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:454px) {
+    .GuidesNameAndLocation p:nth-child(1) {
+        font-size: 3.5vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(3) {
+        font-size: 2.5vw;
+    }
+
+    .GuidesExperience {
+        bottom: -5px;
+    }
+
+    .GuidesLanguage {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width:400px) {
+    .GuidesDetailsDiv {
+        width: 80%;
+    }
+
+    .GuidesNameAndLocation p:nth-child(1) {
+        font-size: 4.5vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(2) {
+        font-size: 4vw;
+    }
+
+    .GuidesNameAndLocation p:nth-child(3) {
+        font-size: 3.5vw;
+    }
+
+    .GuidesExperience {
+        bottom: 10px;
+    }
+
+    .GuidesExperienceFirstDiv {
+        font-size: 10vw;
+    }
+
+    .GuidesExperienceSecoundDiv{
+        margin-bottom: 10px;
+    }
+
+    .GuidesExperienceSecoundDiv div:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .GuidesExperienceSecoundDiv div:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .GuidesLanguage {
+        font-size: 4vw;
+    }
+}

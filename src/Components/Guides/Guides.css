@@ -1,0 +1,111 @@
+.GuidesHeaderMainDiv {
+    margin-top: 40px;
+}
+
+.GuidesHeaderDiv {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.GuidesContentDivParant {
+    position: relative;
+}
+
+.GuidesContentDiv {
+    overflow-x: scroll;
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.GuidesContentDiv::-webkit-scrollbar {
+    width: 0px;
+}
+
+@media (max-width:920px) {
+    .GuidesHeaderMainDiv {
+        margin-top: 40px;
+    }
+
+    .GuidesHeaderDiv {
+        font-family: "Roboto", sans-serif;
+        font-size: 2.9vw;
+        text-align: center;
+    }
+
+    .GuidesContentDivParant {
+        position: relative;
+    }
+
+    .GuidesContentDiv {
+        overflow-x: scroll;
+        width: 99%;
+        margin: auto;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .GuidesContentDiv::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .GuidesLeftContent {
+        display: none;
+    }
+
+    .GuidesLeftContentShow {
+        box-shadow: 0 0 5px black;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        position: absolute;
+        left: 10px;
+        bottom: 42%;
+        background-color: rgb(233, 233, 233);
+        z-index: 1;
+    }
+
+    .GuidesLeftContentShow:hover {
+        background-color: rgb(211, 211, 211);
+        color: rgb(0, 0, 0);
+    }
+
+
+    .GuidesRightContent {
+        display: none;
+    }
+
+    .GuidesRightContentShow {
+        box-shadow: 0 0 5px black;
+        width: 7vw;
+        height: 7vw;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        bottom: 42%;
+        font-size: 4vw;
+        background-color: rgb(233, 233, 233);
+        z-index: 0;
+    }
+
+    .GuidesRightContentShow:hover {
+        background-color: rgb(211, 211, 211);
+        color: rgb(0, 0, 0);
+        ;
+    }
+}
+
+@media (max-width:400px) {
+    .GuidesHeaderMainDiv {
+        margin-top: 10px;
+    }
+}

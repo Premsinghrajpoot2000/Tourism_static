@@ -1,0 +1,161 @@
+.HotelsDetailsDiv {
+    border-radius: 10px;
+    width: 28%;
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.HotelsDetailsDiv:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.HotelsInfo {
+    position: relative;
+}
+
+.HotelsName {
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.HotelsName div:nth-child(1) {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.HotelsName div:nth-child(2) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.HotelsLocationLink {
+    margin-bottom: 0;
+    color: rgb(131, 131, 131);
+    font-size: 20px;
+    margin-top: 0px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.HotelsLocationLink:hover {
+    text-decoration: underline;
+}
+
+.HotelsImage {
+    margin: 5px;
+}
+
+.HotelsImage img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.HotelsRatings {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.HotelsRatings p:nth-child(1) {
+    border-radius: 5px;
+    background-color: rgb(255, 196, 0);
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+.HotelsRatings p:nth-child(2) {
+    font-weight: bold;
+    font-size: 19px;
+    color: rgb(255, 196, 0);
+    margin-left: 10px;
+}
+
+.HotelsRatings p:nth-child(3) {
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    margin-left: 10px;
+}
+
+.HotelsSlider {
+    animation: HotelsScroll 6s linear infinite alternate;
+}
+
+@media (max-width:920px) {
+    .HotelsDetailsDiv {
+        width: 36%;
+        transform: none;
+        transition: none;
+    }
+
+    .HotelsDetailsDiv:hover {
+        transform: none;
+    }
+
+    .HotelsName div:nth-child(1) {
+        font-size: 2.3vw;
+    }
+
+    .HotelsLocationLink {
+        font-size: 2.1vw;
+    }
+
+    .HotelsRatings p:nth-child(1) {
+        font-size: 1.8vw;
+    }
+
+    .HotelsRatings p:nth-child(2) {
+        font-size: 2vw;
+    }
+
+    .HotelsRatings p:nth-child(3) {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:500px) {
+    .HotelsDetailsDiv {
+        width: 55%;
+    }
+
+    .HotelsName div:nth-child(1) {
+        font-size: 4.5vw;
+    }
+
+    .HotelsLocationLink {
+        font-size: 3.4vw;
+    }
+
+    .HotelsRatings p:nth-child(1) {
+        font-size: 3vw;
+    }
+
+    .HotelsRatings p:nth-child(2) {
+        font-size: 3.2vw;
+    }
+
+    .HotelsRatings p:nth-child(3) {
+        font-size: 3.2vw;
+    }
+}
+
+@media (max-width:400px) {
+    .HotelsDetailsDiv {
+        width: 72%;
+    }
+}

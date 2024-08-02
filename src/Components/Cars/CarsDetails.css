@@ -1,0 +1,200 @@
+.CarsDetailsDiv {
+    border-radius: 10px;
+    width: 25%;
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.CarsDetailsDiv:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.CarsInfo {
+    position: relative;
+}
+
+.CarsName {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.Image {
+    margin: 5px;
+}
+
+.Image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.CarsRatings {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    margin-bottom: 0px;
+    white-space: pre-wrap;
+    margin-top: 5px;
+}
+
+.CarsRatings p:nth-child(1) {
+    border-radius: 5px;
+    background-color: rgb(255, 196, 0);
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+.CarsRatings p:nth-child(2) {
+    font-weight: bold;
+    font-size: 19px;
+    color: rgb(255, 196, 0);
+    margin-left: 10px;
+}
+
+.CarsRatings p:nth-child(3) {
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    margin-left: 10px;
+}
+
+.CarsGroupsAndBox {
+    display: flex;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 0px;
+    height: 30px;
+}
+
+.CarsGroupIco {
+    display: flex;
+    align-items: center;
+}
+
+.CarsGroupIco p,
+.CarsBoxIco p {
+    margin-left: 5px;
+}
+
+.CarsBoxIco {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.CarsMobileNumber {
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.CarsMobileNumber div {
+    display: flex;
+    font-size: 20px;
+}
+
+.CarsMobileNumber div a {
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: rgb(0, 4, 255);
+    text-decoration: none;
+}
+
+.CarsMobileNumber div a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:920px) {
+    .CarsDetailsDiv:hover {
+        transform: none;
+    }
+
+    .CarsDetailsDiv {
+        width: 35%;
+        transform: none;
+        transition: none;
+    }
+
+    .CarsName {
+        font-size: 2.6vw;
+    }
+
+    .CarsRatings p:nth-child(1) {
+        font-size: 1.7vw;
+    }
+
+    .CarsRatings p:nth-child(2) {
+        font-size: 1.9vw;
+    }
+
+    .CarsRatings p:nth-child(3) {
+        font-size: 1.9vw;
+    }
+
+    .CarsGroupsAndBox {
+        font-size: 2.1vw;
+    }
+
+    .CarsMobileNumber div i {
+        font-size: 2.1vw;
+    }
+
+    .CarsMobileNumber div a {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:500px) {
+    .CarsDetailsDiv {
+        width: 50%;
+    }
+
+    .CarsName {
+        font-size: 4vw;
+    }
+
+    .CarsRatings p:nth-child(1) {
+        font-size: 2.5vw;
+    }
+
+    .CarsRatings p:nth-child(2) {
+        font-size: 3vw;
+    }
+
+    .CarsRatings p:nth-child(3) {
+        font-size: 3vw;
+    }
+
+    .CarsGroupsAndBox {
+        font-size: 3.5vw;
+    }
+
+    .CarsMobileNumber div i {
+        font-size: 3.5vw;
+    }
+
+    .CarsMobileNumber div a {
+        font-size: 4vw;
+    }
+}
+
+
+@media (max-width:400px) {
+    .CarsDetailsDiv {
+        width: 60%;
+    }
+}
